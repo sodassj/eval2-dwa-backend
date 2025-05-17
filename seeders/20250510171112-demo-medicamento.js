@@ -4,11 +4,11 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert("Medicamentos", [
       {
-        descripcionMed: "Paracetamol 500mg",
+        descripcionMed: "Loratadina 10mg",
         fechaFabricacion: new Date("2024-01-01"),
         fechaVencimiento: new Date("2026-01-01"),
         Presentacion: "Tabletas",
-        stock: 100,
+        stock: 65,
         precioVentaUni: 2,
         precioVentaPres: 10,
         CodTipoMed: 1,
@@ -18,7 +18,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        descripcionMed: "Amoxicilina 500mg",
+        descripcionMed: "Omeprazol 20mg",
         fechaFabricacion: new Date("2024-03-01"),
         fechaVencimiento: new Date("2026-03-01"),
         Presentacion: "Cápsulas",
